@@ -1,2 +1,0 @@
-# grendensimi
-bot simi
