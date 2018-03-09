@@ -17,7 +17,7 @@ $message 	= $client->parseEvents()[0]['message'];
 $profil = $client->profil($userId);
 $pesan_datang = $message['text'];
 
-if($message['type']=='sticker')
+if($message['type']=='')
 {	
 	$balas = array(
 							'UserID' => $profil->userId,	
@@ -66,7 +66,7 @@ if($url['result'] != 100)
 							'messages' => array(
 								array(
 										'type' => 'text',					
-										'text' => 'Maaf '.$profil->displayName.' Server Kami Sedang Sibuk Sekarang.'
+										'text' => 'Maaf '.$profil->displayName.' '
 									)
 							)
 						);
